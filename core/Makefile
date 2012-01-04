@@ -1154,10 +1154,10 @@ $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) $(OTATOOLS)
            -k $(KEY_CERT_PAIR) \
            $(BUILT_TARGET_FILES_PACKAGE) $@
 
-.PHONY: otapackage bacon
+.PHONY: otapackage gummy
 otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
-bacon: otapackage
-	$echo "Running releasetool"
+gummy: otapackage
+	@echo "Running Releasetools"
 	$(hide) ./vendor/Gummy/tools/squisher
 
 # -----------------------------------------------------------------
