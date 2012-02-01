@@ -31,9 +31,7 @@ PRODUCT_PACKAGES := \
     Exchange \
     Gallery2 \
     LatinIME \
-    Launcher2 \
     Music \
-    MusicFX \
     Provision \
     Phone \
     QuickSearchBox \
