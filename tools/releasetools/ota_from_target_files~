@@ -410,7 +410,7 @@ def WriteFullOTAPackage(input_zip, output_zip):
   Item.Get("system").SetPermissions(script)
 
   script.SetPermissionsRecursive("/system/etc/init.d", 0, 0, 0755, 0555)
-  script.SetPermissions("/system/bin/su", 0, 0, 06755)
+  script.SetPermissions("/bin/su", 0, 0, 06755)
   script.SetPermissions("/data/cron", 0, 0, 0755)
   script.SetPermissions("/data/cron/root", 0, 0, 0644)
 
